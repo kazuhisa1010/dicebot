@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
         # 「help」と発言したら、ヘルプを出す
         if message.content == 'help':
-            await message.channel.send(botmessage['help'])
+            await message.channel.send('\n'.join(botmessage['help']))
 
     # Botの起動とDiscordサーバーへの接続
     client.run(TOKEN)
