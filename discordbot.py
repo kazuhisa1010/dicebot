@@ -11,7 +11,7 @@ if __name__ == "__main__":
     botmessage = json.load(json_read)['messages']
     # .bash_profileに記述
     TOKEN = os.environ.get("DISCORD_TOKEN")
-    CHANNEL_ID = os.environ.get("CHANNEL_ID")
+    CHANNEL_ID = int(os.environ.get("DISCORD_CHANNEL_ID"))
 
     # 接続に必要なオブジェクトを生成
     client = discord.Client()
